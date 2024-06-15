@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+main {
+  display: grid;
+  width: 300px;
+  background-color: rgb(0, 0, 0);
+}
+#input {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 10fr;
+}
+#operations {
+  display: grid;
+}
+#numbers {
+  display: grid;
+}
+button {
+  border-radius: 50px;
+  background-color: orange;
+  border: none;
+}
