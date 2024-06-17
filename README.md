@@ -25,7 +25,7 @@ To run the calculator locally, follow these steps:
 1. Clone the repository or download the source code.
 2. Open the `index.html` file in a web browser.
 
-Alternatively, you can visit the live demo at [insert your live demo URL here].
+Alternatively, you can visit the live demo at [https://nof1eld.github.io/iOS-inspired-calculator/].
 
 ## Usage
 
