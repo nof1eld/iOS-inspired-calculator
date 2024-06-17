@@ -2,6 +2,8 @@
 
 This is a simple calculator application inspired from the iOS system calculator built using HTML, CSS, and JavaScript. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
+![alt text](image.png)
+
 ## Features
 
 - Clean and responsive user interface
