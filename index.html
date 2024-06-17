@@ -8,16 +8,20 @@
   </head>
   <body>
     <main>
-      <div>Display screen</div>
-      <div id="input">
+      <div id="display"></div>
+      <div id="keys">
         <div id="operations">
-          <button>C</button>
-          <button>+</button>
+          <button>÷</button>
+          <button>×</button>
           <button>-</button>
-          <button>*</button>
-          <button>/</button>
+          <button>+</button>
+          <button>=</button>
         </div>
         <div id="numbers">
+          <div id="row_0">
+            <button id="C-button">C</button>
+            <button>⌫</button>
+          </div>
           <div id="row_1">
             <button>1</button>
             <button>2</button>
@@ -34,12 +38,12 @@
             <button>9</button>
           </div>
           <div id="row_4">
-            <button>0</button>
             <button>.</button>
-            <button>=</button>
+            <button id="zero-button">0</button>
           </div>
         </div>
       </div>
     </main>
   </body>
+  <script src="./index.js"></script>
 </html>
