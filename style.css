@@ -1,36 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+}
 body {
   display: grid;
   place-items: center;
   height: 100vh;
-  font-family: "Cairo", sans-serif;
+  background-color: beige;
 }
 main {
   display: grid;
-
-  background: linear-gradient(115deg, #363636, #000000, #363636);
+  width: 230px;
+  background: linear-gradient(115deg, #363636, #000000);
   padding: 30px;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 #display {
-  color: white;
+  width: 200px;
   height: 70px;
   display: grid;
   align-items: end;
-  padding: 10px;
-  font-size: xx-large;
+  padding: 10px 10px 10px 4px;
+  margin-bottom: 5px;
+  background-color: #00000000;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+#display:focus {
+  outline: 0;
 }
 #keys {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 0fr 1fr;
-  
   grid-column-gap: 8px;
   align-items: end;
   justify-items: center;
 }
-#operations,
-#numbers {
+#operators,
+#nums_specialOperators {
   display: grid;
   gap: 5px;
 }
@@ -41,18 +50,33 @@ button {
   border: none;
   width: 50px;
   height: 50px;
-  font-weight: bold;
   cursor: pointer;
-  font-family: "Cairo", sans-serif;
-  font-size: large;
+  font-size: larger;
 }
-#zero-button,
-#C-button {
+#zero-button {
   width: 105px;
+  text-align: end;
+  padding-right: 20px;
+  font-size: 21px;
 }
-#numbers button {
+#nums_specialOperators button {
+  background-color: #343434;
+}
+#nums_specialOperators button:hover {
+  background-color: #515151;
+}
+#specialOperators button {
+  background-color: lightgray;
+  color: black;
+  font-weight: 700;
+}
+#specialOperators button:hover {
   background-color: gray;
 }
-#numbers button:hover {
-  background-color: #343434;
+#operators button {
+  font-size: 23px;
+}
+
+#operators button:active {
+  color: rgb(0, 0, 0);
 }
